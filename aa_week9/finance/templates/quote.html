@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+<h1>Search stock symbol</h1>
+<p></p>
+<form action="/quote" method="post">
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="search" name="symbol" placeholder="Search Symbol" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Search</button>
+</form>
+<br>
+{% if info %}
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ info.symbol }}</td>
+                <td>{{ info.price | usd}}</td>
+            </tr>
+{% endif %}
+    </tbody>
+</table>
+
+{% endblock %}

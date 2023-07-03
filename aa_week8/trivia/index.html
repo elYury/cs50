@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <p>What is Yury's favourite animal?</p>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <button id="cats">cats</button>
+                <button id="dogs">dogs</button>
+                <button id="zebras">zerbas</button>
+                <button id="lions">lions</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <p>What is Yury's most hated animal?</p>
+                <form>
+                    <input id="freeAnswer" type='text' autocomplete="off" autofocus placeholder="type an animal">
+                    <button id="submitButton" type="submit">Submit</button>
+                    <p id="textAnswer"></p>
+                    <p id="hintText">Hint: BZZZZZZZZZZZZZZ *SLAP*</p>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        // TODO: Add code to check answers to questions
+        //this function allows us to load the DOM before we run any javascript
+            let body = document.querySelector('body');
+            // code for the free response section
+            let catsButton = document.querySelector('#cats');
+            let dogsButton = document.querySelector('#dogs');
+            let zebrasButton = document.querySelector('#zebras');
+            let lionsButton = document.querySelector('#lions');
+
+            catsButton.addEventListener('click', function() {
+                catsButton.style.backgroundColor = 'green';
+                });
+
+            dogsButton.addEventListener('click', function () {
+                dogsButton.style.backgroundColor = 'red';
+                setTimeout(() => {dogsButton.style.visibility = 'hidden'}, 1500);
+            });
+
+            zebrasButton.addEventListener('click', function () {
+                zebrasButton.style.backgroundColor = 'red';
+                setTimeout(() => {zebrasButton.style.visibility = 'hidden'}, 1500);
+            });
+
+            lionsButton.addEventListener('click', function () {
+                lionsButton.style.backgroundColor = 'red';
+                setTimeout(() => {lionsButton.style.visibility = 'hidden'}, 1000);
+            });
+
+            //<!-- code for the free response section -->
+
+            document.querySelector('#submitButton').addEventListener('click', function(event) {
+                event.preventDefault();
+                let answer = document.querySelector('#freeAnswer');
+                if (answer.value === 'mosquito') {
+                    document.querySelector('#textAnswer').innerHTML = 'Correct, well done!';
+                }
+                else {
+                    document.querySelector('#textAnswer').innerHTML = 'Incorrect answer. Try with all small letters and in singular form.';
+                }
+            });
+    </script>
+</html>

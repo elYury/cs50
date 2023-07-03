@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <!--nav tag is the section for navigation links at the top of our website-->
+        <nav class="navbar">
+            <!--div is a div-->
+            <div class="navbar__container">
+                <!-- anchor tag href defines a hyperlink (top right corner) -->
+                <a href="index.html" id="navbar__logo">YP</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <!-- span is like a div but is used as an inline element, it is easier to manipulate with javascript-->
+                    <!--this is out hamburger menu for mobile-->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- ul tag stands for unordered list (no numerical order)-->
+                <ul class="navbar__menu">
+                    <!-- li is used to specify an item in a list-->
+                    <li class="navbar__item">
+                        <!-- another anchor tag for the links-->
+                        <a href="index.html" class="navbar__links">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <!-- another anchor tag for the links-->
+                        <a href="about.html" class="navbar__links">
+                            About me
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <!-- another anchor tag for the links-->
+                        <a href="work.html" class="navbar__links">
+                            Work Experience
+                        </a>
+                    </li>
+                    <li class="navbar__btn">
+                        <!-- another anchor tag for the links-->
+                        <a href="contact.html" class="button">
+                            Get in touch
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--hero section-->
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>About me</h1>
+                    <p>I'm a passionate individual with a diverse range of interests and experiences. Originally from Russia, I spent the majority of my life living in Spain, which has greatly shaped my worldview and enriched my cultural perspective. My journey has been a fusion of both physical and mental disciplines as I've dedicated myself to kickboxing and chess, two fascinating pursuits that have shaped my character and taught me invaluable life lessons.</p>
+                    <button class="main__btn">
+                        <a href="contact.html">Contact me</a>
+                    </button>
+                </div>
+                <div class="main__img--container">
+                    <img src="images/yurypravdin.jpeg" alt="Image of Yury Pravdin" id="main__img" />
+                </div>
+            </div>
+            <div class="main__container">
+                <div class="main__img--container">
+                    <img src="images/about-main_img.jpg" alt="Image of man boxing at the beach" id="about__img" />
+                </div>
+                <div class="main__content">
+                    <h2>How my hobbies have shaped me</h2>
+                    <p>Through kickboxing, I've learned the importance of discipline, perseverance, and the power of pushing one's limits. On the other hand, chess has honed my strategic thinking, decision-making abilities, and the art of anticipating the moves of both opponents and colleagues. These complementary passions have not only provided me with personal fulfillment but have also driven me to pursue excellence in every aspect of my life.</p>
+                    <p>Having recently graduated with a BBA in Business Administration, I'm equipped with a solid foundation in the corporate world. My academic journey has provided me with a comprehensive understanding of key business concepts, strategies, and principles. However, my education extends beyond the confines of the classroom. Living in different countries has exposed me to diverse business environments and cultural dynamics, allowing me to cultivate a global mindset and an adaptable approach to various challenges. I strongly believe that my cross-cultural experiences, combined with my academic background, give me a unique edge in today's interconnected and rapidly evolving business landscape. I am excited to leverage my skills, knowledge, and passion to make a meaningful impact and contribute to the success of organizations in a globally connected world.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--footer section-->
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>Navigation</h2>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About me</a>
+                        <a href="contact.html">Contact me</a>
+                    </div>
+                    <div class="footer__link--wrapper">
+                        <div class="footer__link--items">
+                            <h2>Social Media</h2>
+                            
+                            <a href="https://www.linkedin.com/in/yury-pravdin-5aa7651b2/" class="social__icon--link" target="_blank">
+                                LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/yuri.pravdin/" class="social__icon--link" target="_blank">
+                                Instagram
+                            </a>
+                            <a href="https://github.com/elYury" class="social__icon--link" target="_blank"> 
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

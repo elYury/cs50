@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <!--nav tag is the section for navigation links at the top of our website-->
+        <nav class="navbar">
+            <!--div is a div-->
+            <div class="navbar__container">
+                <!-- anchor tag href defines a hyperlink (top right corner) -->
+                <a href="index.html" id="navbar__logo">YP</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <!-- span is like a div but is used as an inline element, it is easier to manipulate with javascript-->
+                    <!--this is out hamburger menu for mobile-->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- ul tag stands for unordered list (no numerical order)-->
+                <ul class="navbar__menu">
+                    <!-- li is used to specify an item in a list-->
+                    <li class="navbar__item">
+                        <!-- another anchor tag for the links-->
+                        <a href="index.html" class="navbar__links">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <!-- another anchor tag for the links-->
+                        <a href="about.html" class="navbar__links">
+                            About me
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <!-- another anchor tag for the links-->
+                        <a href="work.html" class="navbar__links">
+                            Work Experience
+                        </a>
+                    </li>
+                    <li class="navbar__btn">
+                        <!-- another anchor tag for the links-->
+                        <a href="contact.html" class="button">
+                            Get in touch
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <!--hero section-->
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>HOWDY!</h1>
+                    <h2>I'm a webdeveloper</h2>
+                    <p>My name is Yury Pravdin, and this is my first website. I aspire to make many more, on my road to become the best version of myself by conquering summit after summit. Let me tell you something about myself...</p>
+                    <button class="main__btn">
+                        <a href="about.html">About me</a>
+                    </button>
+                </div>
+                <div class="main__img--container">
+                    <img src="images/main_img.svg" alt="illustration" id="main__img" />
+                </div>
+            </div>
+        </div>
+
+        <!--footer section-->
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>Navigation</h2>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About me</a>
+                        <a href="contact.html">Contact me</a>
+                    </div>
+                    <div class="footer__link--wrapper">
+                        <div class="footer__link--items">
+                            <h2>Social Media</h2>
+                            
+                            <a href="https://www.linkedin.com/in/yury-pravdin-5aa7651b2/" class="social__icon--link" target="_blank">
+                                LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/yuri.pravdin/" class="social__icon--link" target="_blank">
+                                Instagram
+                            </a>
+                            <a href="https://github.com/elYury" class="social__icon--link" target="_blank"> 
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

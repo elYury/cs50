@@ -1,0 +1,11 @@
+/* CSS HEX
+--black: #020402ff;
+--aureolin: #f7e733ff;
+--ghost-white: #f8f4f9ff;
+
+ CSS HEX 
+--taupe-gray: #9a8f97ff;
+--silver: #c3babaff;
+--platinum: #e9e3e6ff;
+--silver-2: #b2b2b2ff;
+--dim-gray: #736f72ff; */

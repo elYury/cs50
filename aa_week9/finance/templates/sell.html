@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+<h1>Sell Stock</h1>
+<p></p>
+<form action="/sell" method="post">
+    <div class="mb-3">
+        <select name="symbol">
+            <option disabled selected value>Symbol</option>
+            {%for i in range(symbols | length)%}
+                <option value="{{ symbols[i]['symbol'] }}">{{ symbols[i]['symbol'] }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="amount" name="shares" placeholder="Amount" type="number">
+    </div>
+    <button class="btn btn-primary" type="submit">Sell</button>
+</form>
+<br>
+<p>Cash Gained: {{display_amount}}</p>
+<p>Remaining balance: {{current_balance}}</p>
+<p>{{outcome}}</p>
+{% endblock %}

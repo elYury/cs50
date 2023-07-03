@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <h2>Portfolio of Stocks</h2>
+    <br>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Buy price</th>
+                <th scope="col">Market price</th>
+                <th scope="col">Gain/Loss</th>
+            </tr>
+        </thead>
+        {%for i in range(portfolio | length)%}
+            <tbody>
+                <tr>
+                            <td>{{ portfolio[i]['symbol'] }}</td>
+                            <td>{{ portfolio[i]['quantity'] }}</td>
+                            <td>{{ portfolio[i]['price'] }}</td>
+                            <td>{{ market_price[i]['price'] }}</td>
+                            <td>{{ "%.3f"|format((market_price[i]['price'] - portfolio[i]['price']) / 100) }}%</td>
+                </tr>
+            </tbody>
+        {%endfor%}
+    </table>
+    <br>
+    <div>
+        <h3>Account Statistics</h3>
+        <br>
+        <h4>Initial Deposit: {{ user_info[0]['initial_deposit'] }}</h4>
+        <h4>Current Cash: {{ "$%.2f"|format(user_info[0]['cash']) }}</h4>
+        <h4>Current Assets: {{ "$%.2f"|format(assets) }}</h4>
+        <h4>Account Gain/Loss: {{ "%.3f"|format((assets - user_info[0]['initial_deposit']) / 100) }}%</h4>
+    </div>
+{% endblock %}
