@@ -1,0 +1,1 @@
+SELECT AVG(energy) AS "Average Engery of all the songs" FROM songs;

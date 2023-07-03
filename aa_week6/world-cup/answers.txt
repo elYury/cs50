@@ -1,0 +1,22 @@
+Times:
+
+10 simulations: 0m0.025s TODO (record time using 0m0.000s format) 0m0.025s
+
+100 simulations: 0m0.028s TODO (record time using 0m0.000s format) 0m0.028s
+
+1000 simulations: 0m0.034s TODO (record time using 0m0.000s format) 0m0.034s
+
+10000 simulations: 0m0.099s TODO (record time using 0m0.000s format) 0m0.099s
+
+100000 simulations: 0m0.724s TODO (record time using 0m0.000s format) 0m0.724s
+
+1000000 simulations: 0m7.350s TODO (record time using 0m0.000s format) 0m7.350s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?: TODO
+Everything was expected, a massive increase in time. As N increased the difference in the top winners didnt change as much, the more the simulation runs the closer it will get to the rating list in the csv file
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?: TODO
+well i would use all the computing power they give me for free (not reaching one second), therefore on N = 125500 on my machine. Additionally i wouldnt say that the predictions are good. the data we put in is not accurate, there are many more parameters to winning a worldcup. Plus this data is quite bad, Belgium has the second highest rating, but they have never actualy won the WC.

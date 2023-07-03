@@ -1,0 +1,10 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
++-------------+--------------+-------------------+
+| AVG(energy) | AVG(valence) | AVG(danceability) |
++-------------+--------------+-------------------+
+| 0.65906     | 0.484443     | 0.71646           |
++-------------+--------------+-------------------+
+I would say that this person has a depressive sad and angry taste in music because of the low valence average, although these "negative" songs have quite high danceability and energy
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+Right now I took the average of the top 100 songs, a more accurate measure of aura would be to include another parameter being the number of times the song was played and maybe even the freaquency that person plays that song, if we account for that we can more accuratly draw conclusions on Aura
