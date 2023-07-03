@@ -1,0 +1,36 @@
+sort1 uses: Bubble sort
+
+How do you know?: Because when testing with the sorted file, it was faster than sort3, as it has omega(n) best case
+
+sort2 uses: Merge sort
+
+How do you know?: Because using O(nlogn) is faster than O(n^2). As merge sort uses the former, and its real time is the fastest, its most likely sort2
+
+sort3 uses: Selection sort
+
+How do you know?: process of elimination, but it takes long to sort a sorted file becasue it has omega(n^2) best case
+
+sort1 rand50000
+real    0m7.624s
+user    0m6.881s
+sys     0m0.188s
+
+sort2 rand50000
+real    0m0.609s
+user    0m0.040s
+sys     0m0.187s
+
+sort3 rand50000
+real    0m3.236s
+user    0m2.567s
+sys     0m0.202s
+
+sort1 sorted50000
+real    0m0.664s
+user    0m0.040s
+sys     0m0.205s
+
+sort3 sorted50000
+real    0m3.163s
+user    0m2.600s
+sys     0m0.162s
